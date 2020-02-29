@@ -1,0 +1,5 @@
+{
+    "require": {
+        "danog/phpstruct": "^1.2"
+    }
+}

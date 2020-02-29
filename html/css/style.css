@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #789;
+	font-family: georgia, serif;
+	font-size: 13px;
+}
+
+#content {
+	display: block;
+	/*width: 812px;*/
+	width: 1200px;
+	margin: 40px auto 10px;
+	padding: 10px;
+	background-color: #FFF;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border:2px solid black;
+	-moz-box-shadow: 0 0 14px #123;
+	-webkit-box-shadow: 0 0 14px #123;
+	box-shadow: 0 0 14px #123;
+	min-height:550px;
+	
+}
+
+h2,p {
+	margin: 0 auto 14px;	
+}
+
+h1{
+	background:#eeeeee;
+}
+
+ul {
+	display: block;
+	clear: left;
+	height: 82px;
+	width: 812px;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	background-color: #FFF;
+	text-align: center;
+	border: 1px solid black;
+	border-top: 0;
+	border-bottom: 2px solid black;
+}
+
+li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 20px 2px 2px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 110px;
+	height: 60px;
+	overflow: hidden;
+	background-color: white;
+}
+
+li:hover {
+	background-color: #FCB;
+	z-index: 1;
+	-moz-box-shadow: 0 0 10px #789;
+	-webkit-box-shadow: 0 0 10px #789;
+	box-shadow: 0 0 10px #789;
+}
+
+.weekdays {
+	height: 20px;
+	border-top: 2px solid black;
+}
+
+.weekdays li {
+	height: 16px;
+	padding: 2px 2px;
+	background-color: #BCF;
+}
+
+.fill {
+	background-color: #BCD;
+}
+
+.weekdays li:hover,li.fill:hover {
+	background-color: #BCD;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.weekdays li:hover,.today {
+	background-color: #BCF;
+}
+
+li strong {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+}
+
+li a {
+	position: relative;
+	display: block;
+	border: 1px dotted black;
+	margin: 2px;
+	padding: 2px;
+	font-size: 11px;
+	background-color: #DEF;
+	text-align: left;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	z-index: 1;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-style: italic;
+}
+
+li a:hover {
+	background-color: #BCF;
+	z-index: 2;
+	-moz-box-shadow: 0 0 6px #789;
+	-webkit-box-shadow: 0 0 6px #789;
+	box-shadow: 0 0 6px #789;
+}
+
+/*Cabecera*/
+
+#cabecera{
+	/*width:812px;*/
+	width: 1200px;
+	height:74px;
+	margin-bottom:10px;
+}
+
+#cabecera #logo1, #cabecera #titulo{
+	float:left;
+}
+
+#cabecera #logo1{
+	/*background:url(/assets/images/banner_ministerio.png) no-repeat;*/
+	width:416px;
+	height:74px;
+}
+
+
+#cabecera #titulo{
+	width:276px;
+	height:74px;	
+    float: left;
+    font-size: 21px;
+    padding-left: 5px;
+    /*width: 267px;*/
+	width: 656px;
+	background:#eee;
+	height:74px;
+	line-height:76px;
+	margin-left:4px;
+	text-align:center;
+	font-weight:bold;
+}
+#cabecera #logo2{
+	background:url(/assets/images/logo_inarys.png);
+	float:right;
+	width:111px;
+	height:74px;
+}
+
+
+/*Fin cabecera*/
+
+
+#top_menu{
+	height:36px;
+	/*width:812px;*/
+	width: 1200px;
+	background-color:rgba(198,226,166,0.8);
+	color:#6f6e6e;
+	float:left;
+	margin-top:5px;
+	margin-bottom:15px;
+	text-align:center;
+	line-height:36px;
+}
+
+#top_menu a{
+	color:#6f6e6e;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.dinamico{
+	margin-bottom:20px;
+}
+.variableDin{
+	border: 1px solid #123;
+	background-color:#eee;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;	
+	padding: 4px;
+	margin: 4px 0 4px;
+	font-size: 16px;
+	font-family: georgia, serif;
+}
+
+.delete, .edit{
+	border:1px solid;
+	color:#666;
+	background-color:#fff;
+	cursor:pointer;
+}
+
+/* 
+	Blue Dream Table
+	Written by Teylor Feliz  http://www.admixweb.com
+*/
+
+
+table { background:#D3E4E5;
+ border:1px solid gray;
+ border-collapse:collapse;
+ color:#fff;
+ font:normal 12px verdana, arial, helvetica, sans-serif;
+ margin-top:10px;
+}
+caption { border:1px solid #5C443A;
+ color:#5C443A;
+ font-weight:bold;
+ letter-spacing:20px;
+ padding:6px 4px 8px 0px;
+ text-align:center;
+ text-transform:uppercase;
+}
+td, th { color:#363636;
+ padding:.4em;
+}
+tr { border:1px dotted gray;
+}
+thead th, tfoot th { background:#5C443A;
+ color:#FFFFFF;
+ padding:3px 10px 3px 10px;
+ text-align:left;
+ text-transform:uppercase;
+}
+tbody td a { color:#363636;
+ text-decoration:none;
+}
+tbody td a:visited { color:gray;
+ text-decoration:line-through;
+}
+tbody td a:hover { text-decoration:underline;
+}
+tbody th a { color:#363636;
+ font-weight:normal;
+ text-decoration:none;
+}
+tbody th a:hover { color:#363636;
+}
+tbody td+td+td+td a { background-image:url('bullet_blue.png');
+ background-position:left center;
+ background-repeat:no-repeat;
+ color:#03476F;
+ padding-left:15px;
+}
+tbody td+td+td+td a:visited { background-image:url('bullet_white.png');
+ background-position:left center;
+ background-repeat:no-repeat;
+}
+tbody th, tbody td { text-align:left;
+ vertical-align:top;
+}
+tfoot td { background:#5C443A;
+ color:#FFFFFF;
+ padding-top:3px;
+}
+.odd { background:#fff;
+}
+tbody tr:hover { background:#99BCBF;
+ border:1px solid #03476F;
+ color:#000000;
+}
+
+/* 
+	Fin estilos tabla
+*/
+
+
+/* Esitlos incidencia*/
+
+#top_incidencia{
+	border:1px solid #ccc;
+	padding:4px;
+	margin-bottom:10px;
+}
+
+#top_incidencia #izda{
+	float:left;
+}
+
+#top_incidencia #dcha{
+	float:right;
+}
